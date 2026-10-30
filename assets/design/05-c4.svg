@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="1550" viewBox="0 0 1570 1550" role="img" aria-labelledby="title desc">
+<title id="title">C4 container · место модуля в Почини.Онлайн</title><desc id="desc">Целевая архитектура · контейнер C4 означает приложение, процесс или хранилище</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#26364a" stroke-width="2"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26364a">
+<text x="44" y="48" font-size="29" text-anchor="start" font-weight="700">
+<tspan x="44" dy="0">C4 container · место модуля в Почини.Онлайн</tspan>
+</text>
+<text x="44" y="84" font-size="21" text-anchor="start">
+<tspan x="44" dy="0">Целевая архитектура · контейнер C4 означает приложение, процесс или хранилище</tspan>
+</text>
+<rect x="40" y="300" width="1490" height="920" rx="8" fill="none" stroke="#708096" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="60" y="1197" font-size="22" text-anchor="start" font-weight="700">
+<tspan x="60" dy="0">Почини.Онлайн · часть системы проверки</tspan>
+</text>
+<rect x="70" y="130" width="290" height="100" rx="18" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="215.0" y="159.83999999999997" font-size="21" text-anchor="middle">
+<tspan x="215.0" dy="0">Автовладелец</tspan>
+<tspan x="215.0" dy="27.3">[человек]</tspan>
+<tspan x="215.0" dy="27.3">Читает факты и оценку</tspan>
+</text>
+<rect x="415" y="130" width="290" height="110" rx="18" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="560.0" y="152.8" font-size="20" text-anchor="middle">
+<tspan x="560.0" dy="0">Представитель сервиса</tspan>
+<tspan x="560.0" dy="26.0">[человек]</tspan>
+<tspan x="560.0" dy="26.0">Подаёт реквизиты;</tspan>
+<tspan x="560.0" dy="26.0">запрашивает исправления</tspan>
+</text>
+<rect x="1195" y="130" width="290" height="110" rx="18" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="1340.0" y="152.8" font-size="20" text-anchor="middle">
+<tspan x="1340.0" dy="0">Оператор</tspan>
+<tspan x="1340.0" dy="26.0">[человек]</tspan>
+<tspan x="1340.0" dy="26.0">Рассматривает</tspan>
+<tspan x="1340.0" dy="26.0">спорные сведения</tspan>
+</text>
+<rect x="180" y="395" width="430" height="130" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="395.0" y="438.88" font-size="22" text-anchor="middle">
+<tspan x="395.0" dy="0">Client</tspan>
+<tspan x="395.0" dy="28.6">[приложение, TypeScript]</tspan>
+<tspan x="395.0" dy="28.6">Карточка клиента, реквизиты сервиса</tspan>
+</text>
+<rect x="1150" y="395" width="335" height="130" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="1317.5" y="438.88" font-size="22" text-anchor="middle">
+<tspan x="1317.5" dy="0">Backoffice</tspan>
+<tspan x="1317.5" dy="28.6">[веб-приложение]</tspan>
+<tspan x="1317.5" dy="28.6">Интерфейс оператора</tspan>
+</text>
+<rect x="180" y="650" width="430" height="130" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="395.0" y="693.88" font-size="22" text-anchor="middle">
+<tspan x="395.0" dy="0">API Gateway</tspan>
+<tspan x="395.0" dy="28.6">[API, Python]</tspan>
+<tspan x="395.0" dy="28.6">Маршрутизация и сессия</tspan>
+</text>
+<rect x="680" y="650" width="400" height="160" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="880.0" y="696.1899999999999" font-size="21" text-anchor="middle">
+<tspan x="880.0" dy="0">Products</tspan>
+<tspan x="880.0" dy="27.3">[API, Python]</tspan>
+<tspan x="880.0" dy="27.3">Каталог + новый модуль оценки;</tspan>
+<tspan x="880.0" dy="27.3">права, версии, публичная проекция</tspan>
+</text>
+<rect x="1150" y="650" width="335" height="130" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="1317.5" y="694.84" font-size="21" text-anchor="middle">
+<tspan x="1317.5" dy="0">Admin</tspan>
+<tspan x="1317.5" dy="27.3">[API, Python]</tspan>
+<tspan x="1317.5" dy="27.3">Права и команды оператора</tspan>
+</text>
+<rect x="180" y="990" width="430" height="140" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="395.0" y="1039.8400000000001" font-size="21" text-anchor="middle">
+<tspan x="395.0" dy="0">БД домена Products</tspan>
+<tspan x="395.0" dy="27.3">[хранилище, PostgreSQL]</tspan>
+<tspan x="395.0" dy="27.3">Связи, задания, снимки, оценки, аудит</tspan>
+</text>
+<rect x="680" y="990" width="400" height="140" rx="4" fill="#e9f5ef" stroke="#26364a" stroke-width="2"/>
+<text x="880.0" y="1039.8400000000001" font-size="21" text-anchor="middle">
+<tspan x="880.0" dy="0">Worker проверки — новый</tspan>
+<tspan x="880.0" dy="27.3">[фоновый процесс, Python]</tspan>
+<tspan x="880.0" dy="27.3">Тот же код домена; lease и адаптеры</tspan>
+</text>
+<rect x="650" y="1325" width="820" height="135" rx="4" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="1060.0" y="1372.3400000000001" font-size="21" text-anchor="middle">
+<tspan x="1060.0" dy="0">Источники регистрационных и юридических сведений</tspan>
+<tspan x="1060.0" dy="27.3">[внешние системы, сгруппированы]</tspan>
+<tspan x="1060.0" dy="27.3">Реестр / поставщик данных, суды, разрешённые сведения об обращениях</tspan>
+</text>
+<polyline points="215,230 215,290 300,290 300,395" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="170" y="365" font-size="20" text-anchor="middle">
+<tspan x="170" dy="0">использует</tspan>
+</text>
+<polyline points="560,240 560,395" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="625" y="280" font-size="20" text-anchor="middle">
+<tspan x="625" dy="0">использует</tspan>
+</text>
+<polyline points="1340,240 1340,395" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1400" y="280" font-size="20" text-anchor="middle">
+<tspan x="1400" dy="0">использует</tspan>
+</text>
+<polyline points="395,525 395,650" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="490" y="595" font-size="20" text-anchor="middle">
+<tspan x="490" dy="0">HTTPS / JSON</tspan>
+</text>
+<polyline points="1317,525 1317,650" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1410" y="595" font-size="20" text-anchor="middle">
+<tspan x="1410" dy="0">HTTPS / JSON</tspan>
+</text>
+<polyline points="610,710 680,710" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="645" y="691" font-size="20" text-anchor="middle">
+<tspan x="645" dy="0">HTTP</tspan>
+</text>
+<polyline points="1150,710 1080,710" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1116" y="691" font-size="20" text-anchor="middle">
+<tspan x="1116" dy="0">HTTP</tspan>
+</text>
+<polyline points="790,810 790,890 395,890 395,990" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="550" y="869" font-size="20" text-anchor="middle">
+<tspan x="550" dy="0">SQL: задания и текущий результат</tspan>
+</text>
+<polyline points="680,1060 610,1060" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="645" y="1040" font-size="20" text-anchor="middle">
+<tspan x="645" dy="0">SQL</tspan>
+</text>
+<polyline points="880,1130 880,1325" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1160" y="1254" font-size="20" text-anchor="middle">
+<tspan x="1160" dy="0">HTTPS: запросы адаптеров</tspan>
+<tspan x="1160" dy="26.0">Ограничения поставщиков</tspan>
+</text>
+<rect x="1130" y="925" width="360" height="220" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1310.0" y="973.89" font-size="21" text-anchor="middle">
+<tspan x="1310.0" dy="0">Источник недоступен —</tspan>
+<tspan x="1310.0" dy="27.3">частичный результат.</tspan>
+<tspan x="1310.0" dy="27.3">Документы и персональные</tspan>
+<tspan x="1310.0" dy="27.3">данные не идут в публичную</tspan>
+<tspan x="1310.0" dy="27.3">карточку. Оценка не меняет</tspan>
+<tspan x="1310.0" dy="27.3">права управления профилем.</tspan>
+</text>
+<text x="50" y="1498" font-size="21" text-anchor="start">
+<tspan x="50" dy="0">Синий — существующий контейнер с проектируемыми изменениями; зелёный — новый процесс; серый — участники и источники.</tspan>
+</text>
+</g></svg>

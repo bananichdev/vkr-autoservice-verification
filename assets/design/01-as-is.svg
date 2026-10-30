@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1530" viewBox="0 0 1440 1530" role="img" aria-labelledby="title desc">
+<title id="title">AS-IS · выбор автосервиса без аналитического модуля</title><desc id="desc">UML activity · базовая проверка реквизитов в проекте уже предусмотрена</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#26364a" stroke-width="2"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26364a">
+<text x="44" y="48" font-size="29" text-anchor="start" font-weight="700">
+<tspan x="44" dy="0">AS-IS · выбор автосервиса без аналитического модуля</tspan>
+</text>
+<text x="44" y="84" font-size="21" text-anchor="start">
+<tspan x="44" dy="0">UML activity · базовая проверка реквизитов в проекте уже предусмотрена</tspan>
+</text>
+<rect x="40" y="112" width="450" height="1368" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="40" y="112" width="450" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="265.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="265.0" dy="0">Автовладелец</tspan>
+</text>
+<rect x="490" y="112" width="460" height="1368" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="490" y="112" width="460" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="720.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="720.0" dy="0">Почини.Онлайн</tspan>
+</text>
+<rect x="950" y="112" width="450" height="1368" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="950" y="112" width="450" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="1175.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="1175.0" dy="0">Внешние источники</tspan>
+</text>
+<circle cx="265" cy="202" r="12" fill="#26364a"/>
+<rect x="100" y="250" width="330" height="90" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="265.0" y="288.18" font-size="22" text-anchor="middle">
+<tspan x="265.0" dy="0">Открыть карточку</tspan>
+<tspan x="265.0" dy="28.6">автосервиса</tspan>
+</text>
+<rect x="550" y="390" width="340" height="110" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="720.0" y="423.88" font-size="22" text-anchor="middle">
+<tspan x="720.0" dy="0">Показать профиль, отзывы</tspan>
+<tspan x="720.0" dy="28.6">и существующий статус</tspan>
+<tspan x="720.0" dy="28.6">проверки реквизитов</tspan>
+</text>
+<rect x="100" y="550" width="330" height="100" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="265.0" y="593.1800000000001" font-size="22" text-anchor="middle">
+<tspan x="265.0" dy="0">Самостоятельно найти</tspan>
+<tspan x="265.0" dy="28.6">реквизиты исполнителя</tspan>
+</text>
+<rect x="1010" y="700" width="330" height="110" rx="18" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="1175.0" y="733.88" font-size="22" text-anchor="middle">
+<tspan x="1175.0" dy="0">Ответить на отдельные</tspan>
+<tspan x="1175.0" dy="28.6">запросы к реестрам</tspan>
+<tspan x="1175.0" dy="28.6">и судебным сведениям</tspan>
+</text>
+<rect x="100" y="850" width="330" height="110" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="265.0" y="883.88" font-size="22" text-anchor="middle">
+<tspan x="265.0" dy="0">Сопоставить сведения</tspan>
+<tspan x="265.0" dy="28.6">об организации, судах</tspan>
+<tspan x="265.0" dy="28.6">и обращениях клиентов</tspan>
+</text>
+<polygon points="265,990.0 395.0,1040 265,1090.0 135.0,1040" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="265" y="1035" font-size="20" text-anchor="middle">
+<tspan x="265" dy="0">Сведения</tspan>
+<tspan x="265" dy="26.0">понятны?</tspan>
+</text>
+<rect x="70" y="1150" width="290" height="70" rx="18" fill="#e9f5ef" stroke="#26364a" stroke-width="2"/>
+<text x="215.0" y="1192.48" font-size="22" text-anchor="middle">
+<tspan x="215.0" dy="0">Принять решение</tspan>
+</text>
+<rect x="100" y="1310" width="330" height="90" rx="18" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="265.0" y="1348.18" font-size="22" text-anchor="middle">
+<tspan x="265.0" dy="0">Отложить выбор</tspan>
+<tspan x="265.0" dy="28.6">и продолжить поиск</tspan>
+</text>
+<circle cx="215" cy="1250" r="17" fill="white" stroke="#26364a" stroke-width="2"/>
+<circle cx="215" cy="1250" r="10" fill="#26364a"/>
+<circle cx="265" cy="1440" r="17" fill="white" stroke="#26364a" stroke-width="2"/>
+<circle cx="265" cy="1440" r="10" fill="#26364a"/>
+<polyline points="265,214 265,250" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="265,340 265,445 550,445" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="550,470 470,470 470,600 430,600" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="265,650 265,735 1010,735" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="1010,785 470,785 470,905 430,905" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="265,960 265,990" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="265,1090 265,1150" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="310" y="1125" font-size="20" text-anchor="middle">
+<tspan x="310" dy="0">[да]</tspan>
+</text>
+<polyline points="395,1040 470,1040 470,1355 430,1355" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="445" y="1025" font-size="20" text-anchor="middle">
+<tspan x="445" dy="0">[нет]</tspan>
+</text>
+<polyline points="215,1220 215,1233" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="265,1400 265,1423" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="560" y="865" width="340" height="105" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="730.0" y="897.34" font-size="21" text-anchor="middle">
+<tspan x="730.0" dy="0">Нет единого объяснения</tspan>
+<tspan x="730.0" dy="27.3">и истории проверки;</tspan>
+<tspan x="730.0" dy="27.3">сопоставление делает клиент</tspan>
+</text>
+</g></svg>

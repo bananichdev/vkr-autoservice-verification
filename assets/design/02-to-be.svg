@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="2010" viewBox="0 0 1520 2010" role="img" aria-labelledby="title desc">
+<title id="title">TO-BE · единая проверка и объяснение результата</title><desc id="desc">UML activity · клиентский сценарий; очередь и ручное решение выполняются асинхронно</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#26364a" stroke-width="2"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26364a">
+<text x="44" y="48" font-size="29" text-anchor="start" font-weight="700">
+<tspan x="44" dy="0">TO-BE · единая проверка и объяснение результата</tspan>
+</text>
+<text x="44" y="84" font-size="21" text-anchor="start">
+<tspan x="44" dy="0">UML activity · клиентский сценарий; очередь и ручное решение выполняются асинхронно</tspan>
+</text>
+<rect x="40" y="112" width="440" height="1848" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="40" y="112" width="440" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="260.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="260.0" dy="0">Автовладелец</tspan>
+</text>
+<rect x="480" y="112" width="670" height="1848" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="480" y="112" width="670" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="815.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="815.0" dy="0">Модуль проверки</tspan>
+</text>
+<rect x="1150" y="112" width="330" height="1848" rx="0" fill="none" stroke="#bac4d1" stroke-width="2"/>
+<rect x="1150" y="112" width="330" height="50" rx="0" fill="#f1f3f6" stroke="#bac4d1" stroke-width="2"/>
+<text x="1315.0" y="145" font-size="22" text-anchor="middle" font-weight="700">
+<tspan x="1315.0" dy="0">Оператор</tspan>
+</text>
+<circle cx="240" cy="205" r="12" fill="#26364a"/>
+<rect x="80" y="250" width="320" height="90" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="240.0" y="288.18" font-size="22" text-anchor="middle">
+<tspan x="240.0" dy="0">Открыть карточку</tspan>
+<tspan x="240.0" dy="28.6">выбранного сервиса</tspan>
+</text>
+<rect x="670" y="350" width="360" height="90" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="388.18" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Проверить текущую связь,</tspan>
+<tspan x="850.0" dy="28.6">версию входов и срок данных</tspan>
+</text>
+<polygon points="850,455.0 980.0,510 850,565.0 720.0,510" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="850" y="505" font-size="20" text-anchor="middle">
+<tspan x="850" dy="0">Карточка</tspan>
+<tspan x="850" dy="26.0">актуальна?</tspan>
+</text>
+<polygon points="850,598.0 862.0,610 850,622.0 838.0,610" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<rect x="670" y="660" width="360" height="100" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="688.88" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Создать / найти задание;</tspan>
+<tspan x="850.0" dy="28.6">зафиксировать версии</tspan>
+<tspan x="850.0" dy="28.6">и номер проверки</tspan>
+</text>
+<rect x="670" y="800" width="360" height="100" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="828.88" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Получить сведения реестра;</tspan>
+<tspan x="850.0" dy="28.6">сопоставить ЮЛ/ИП</tspan>
+<tspan x="850.0" dy="28.6">с конкретной точкой</tspan>
+</text>
+<polygon points="850,920.0 960.0,970 850,1020.0 740.0,970" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="850" y="965" font-size="20" text-anchor="middle">
+<tspan x="850" dy="0">Связь</tspan>
+<tspan x="850" dy="26.0">субъекта?</tspan>
+</text>
+<rect x="490" y="1090" width="165" height="135" rx="18" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="572.5" y="1126.91" font-size="19" text-anchor="middle">
+<tspan x="572.5" dy="0">Зафиксировать</tspan>
+<tspan x="572.5" dy="24.7">причину:</tspan>
+<tspan x="572.5" dy="24.7">нет данных /</tspan>
+<tspan x="572.5" dy="24.7">несовпадение</tspan>
+</text>
+<rect x="1170" y="920" width="280" height="110" rx="18" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1310.0" y="955.8" font-size="20" text-anchor="middle">
+<tspan x="1310.0" dy="0">Проверить основания</tspan>
+<tspan x="1310.0" dy="26.0">спорной связи;</tspan>
+<tspan x="1310.0" dy="26.0">запросить исправление</tspan>
+</text>
+<rect x="1170" y="1110" width="280" height="110" rx="18" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1310.0" y="1145.8" font-size="20" text-anchor="middle">
+<tspan x="1310.0" dy="0">Зафиксировать решение;</tspan>
+<tspan x="1310.0" dy="26.0">новая версия входов</tspan>
+<tspan x="1310.0" dy="26.0">и новая проверка</tspan>
+</text>
+<rect x="670" y="1120" width="360" height="100" rx="18" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="1148.88" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Собрать суды, жалобы</tspan>
+<tspan x="850.0" dy="28.6">и другие доступные факты;</tspan>
+<tspan x="850.0" dy="28.6">сохранить пробелы в данных</tspan>
+</text>
+<rect x="670" y="1280" width="360" height="110" rx="18" fill="#e9f5ef" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="1313.88" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Объединить дубли событий;</tspan>
+<tspan x="850.0" dy="28.6">оценить факторы по методике;</tspan>
+<tspan x="850.0" dy="28.6">подготовить объяснение</tspan>
+</text>
+<polygon points="850,1444.0 866.0,1460 850,1476.0 834.0,1460" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<polygon points="850,1495.0 1000.0,1560 850,1625.0 700.0,1560" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="850" y="1555" font-size="20" text-anchor="middle">
+<tspan x="850" dy="0">Версии и номер</tspan>
+<tspan x="850" dy="26.0">ещё актуальны?</tspan>
+</text>
+<rect x="490" y="1510" width="165" height="100" rx="18" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="572.5" y="1527.8" font-size="20" text-anchor="middle">
+<tspan x="572.5" dy="0">В историю;</tspan>
+<tspan x="572.5" dy="26.0">текущую</tspan>
+<tspan x="572.5" dy="26.0">карточку</tspan>
+<tspan x="572.5" dy="26.0">не менять</tspan>
+</text>
+<circle cx="572" cy="1685" r="17" fill="white" stroke="#26364a" stroke-width="2"/>
+<circle cx="572" cy="1685" r="10" fill="#26364a"/>
+<rect x="670" y="1670" width="360" height="100" rx="18" fill="#e9f5ef" stroke="#26364a" stroke-width="2"/>
+<text x="850.0" y="1698.88" font-size="22" text-anchor="middle">
+<tspan x="850.0" dy="0">Атомарно опубликовать</tspan>
+<tspan x="850.0" dy="28.6">результат или статус</tspan>
+<tspan x="850.0" dy="28.6">недостатка сведений</tspan>
+</text>
+<polygon points="240,1794.0 256.0,1810 240,1826.0 224.0,1810" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<rect x="80" y="1855" width="320" height="70" rx="18" fill="#e9f5ef" stroke="#26364a" stroke-width="2"/>
+<text x="240.0" y="1897.14" font-size="21" text-anchor="middle">
+<tspan x="240.0" dy="0">Прочитать основания и даты</tspan>
+</text>
+<circle cx="240" cy="1945" r="17" fill="white" stroke="#26364a" stroke-width="2"/>
+<circle cx="240" cy="1945" r="10" fill="#26364a"/>
+<polyline points="240,217 240,250" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="400,295 520,295 520,395 670,395" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,440 850,455" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="720,510 60,510 60,1810 224,1810" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="400" y="490" font-size="20" text-anchor="middle">
+<tspan x="400" dy="0">[да]</tspan>
+</text>
+<polyline points="850,565 850,598" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="895" y="588" font-size="20" text-anchor="middle">
+<tspan x="895" dy="0">[нет]</tspan>
+</text>
+<polyline points="850,622 850,660" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,760 850,800" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,900 850,920" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="740,970 572,970 572,1090" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="540" y="1040" font-size="20" text-anchor="middle">
+<tspan x="540" dy="0">[нет данных / несовпадение]</tspan>
+</text>
+<polyline points="960,970 1170,970" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1060" y="946" font-size="20" text-anchor="middle">
+<tspan x="1060" dy="0">[спорная связь]</tspan>
+</text>
+<polyline points="850,1020 850,1120" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="940" y="1072" font-size="20" text-anchor="middle">
+<tspan x="940" dy="0">[подтверждена]</tspan>
+</text>
+<polyline points="1310,1030 1310,1110" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="1450,1165 1465,1165 1465,610 862,610" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1270" y="588" font-size="20" text-anchor="middle">
+<tspan x="1270" dy="0">новая проверка</tspan>
+</text>
+<polyline points="850,1220 850,1280" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,1390 850,1444" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="572,1225 572,1460 834,1460" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,1476 850,1495" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="700,1560 655,1560" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="678" y="1539" font-size="20" text-anchor="middle">
+<tspan x="678" dy="0">[нет]</tspan>
+</text>
+<polyline points="572,1610 572,1668" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="850,1625 850,1670" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="895" y="1652" font-size="20" text-anchor="middle">
+<tspan x="895" dy="0">[да]</tspan>
+</text>
+<polyline points="670,1720 470,1720 470,1770 240,1770 240,1794" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="240,1826 240,1855" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="240,1925 240,1928" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="1170" y="1750" width="280" height="175" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1310.0" y="1792.3" font-size="20" text-anchor="middle">
+<tspan x="1310.0" dy="0">Карточка показывает</tspan>
+<tspan x="1310.0" dy="26.0">ожидание решения.</tspan>
+<tspan x="1310.0" dy="26.0">Нет ответа источника —</tspan>
+<tspan x="1310.0" dy="26.0">не доказательство</tspan>
+<tspan x="1310.0" dy="26.0">отсутствия риска.</tspan>
+</text>
+</g></svg>
