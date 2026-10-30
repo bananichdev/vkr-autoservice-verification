@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="1770" viewBox="0 0 1570 1770" role="img" aria-labelledby="title desc">
+<title id="title">ER · данные проверки и история оснований</title><desc id="desc">Логическая модель расширения · PK — ключ, FK — ссылка; 0..N — любое число, включая ноль</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#26364a" stroke-width="2"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26364a">
+<text x="44" y="48" font-size="29" text-anchor="start" font-weight="700">
+<tspan x="44" dy="0">ER · данные проверки и история оснований</tspan>
+</text>
+<text x="44" y="84" font-size="21" text-anchor="start">
+<tspan x="44" dy="0">Логическая модель расширения · PK — ключ, FK — ссылка; 0..N — любое число, включая ноль</tspan>
+</text>
+<rect x="50" y="140" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="50" y="140" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="68" y="173" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="68" dy="0">Точка · ServicePoint</tspan>
+</text>
+<text x="68" y="221" font-size="21" text-anchor="start">
+<tspan x="68" dy="0">PK point_id</tspan>
+<tspan x="68" dy="27.3">name, address</tspan>
+<tspan x="68" dy="27.3">input_revision, generation</tspan>
+<tspan x="68" dy="27.3">current_binding_id?</tspan>
+<tspan x="68" dy="27.3">current_assessment_id?</tspan>
+</text>
+<rect x="575" y="140" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="575" y="140" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="593" y="173" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="593" dy="0">Связь · SubjectBinding</tspan>
+</text>
+<text x="593" y="221" font-size="21" text-anchor="start">
+<tspan x="593" dy="0">PK binding_id; FK point_id</tspan>
+<tspan x="593" dy="27.3">FK subject_id; revision</tspan>
+<tspan x="593" dy="27.3">valid_from, valid_to?</tspan>
+<tspan x="593" dy="27.3">state, basis_ref</tspan>
+<tspan x="593" dy="27.3">0..1 подтверждённых текущих</tspan>
+</text>
+<rect x="1100" y="140" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="1100" y="140" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="1118" y="173" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="1118" dy="0">Субъект · LegalSubject</tspan>
+</text>
+<text x="1118" y="221" font-size="21" text-anchor="start">
+<tspan x="1118" dy="0">PK subject_id; kind: ЮЛ / ИП</tspan>
+<tspan x="1118" dy="27.3">inn, ogrn_or_ogrnip</tspan>
+<tspan x="1118" dy="27.3">registered_on, registry_status</tspan>
+<tspan x="1118" dy="27.3">UNIQUE(kind, inn, ogrn_or_ogrnip)</tspan>
+<tspan x="1118" dy="27.3">Возраст регистрации ≠ стаж точки</tspan>
+</text>
+<rect x="50" y="550" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="50" y="550" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="68" y="583" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="68" dy="0">Проверка · CheckRun</tspan>
+</text>
+<text x="68" y="631" font-size="21" text-anchor="start">
+<tspan x="68" dy="0">PK run_id; FK binding_id</tspan>
+<tspan x="68" dy="27.3">request_key, generation</tspan>
+<tspan x="68" dy="27.3">captured_versions, lease_epoch</tspan>
+<tspan x="68" dy="27.3">state, lease_until</tspan>
+<tspan x="68" dy="27.3">method_snapshot, input_snapshot</tspan>
+</text>
+<rect x="575" y="550" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="575" y="550" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="593" y="583" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="593" dy="0">Источник · SourceResult</tspan>
+</text>
+<text x="593" y="631" font-size="21" text-anchor="start">
+<tspan x="593" dy="0">PK source_result_id; FK run_id</tspan>
+<tspan x="593" dy="27.3">source_code, query_scope</tspan>
+<tspan x="593" dy="27.3">observed_at, source_as_of?</tspan>
+<tspan x="593" dy="27.3">outcome, coverage, valid_until</tspan>
+<tspan x="593" dy="27.3">Нормализованный снимок + хеш</tspan>
+</text>
+<rect x="1100" y="550" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="1100" y="550" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="1118" y="583" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="1118" dy="0">Факт · Fact</tspan>
+</text>
+<text x="1118" y="631" font-size="21" text-anchor="start">
+<tspan x="1118" dy="0">PK (fact_id, revision)</tspan>
+<tspan x="1118" dy="27.3">FK subject_id; point_id?</tspan>
+<tspan x="1118" dy="27.3">event_key, kind, event_date</tspan>
+<tspan x="1118" dy="27.3">role, outcome, confirmation</tspan>
+<tspan x="1118" dy="27.3">resolution, scope: ЮЛ / точка</tspan>
+</text>
+<rect x="50" y="970" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="50" y="970" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="68" y="1003" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="68" dy="0">Решение · AuditEvent</tspan>
+</text>
+<text x="68" y="1051" font-size="21" text-anchor="start">
+<tspan x="68" dy="0">PK audit_id; FK binding_id</tspan>
+<tspan x="68" dy="27.3">actor, action, at, reason</tspan>
+<tspan x="68" dy="27.3">old_revision, new_revision</tspan>
+<tspan x="68" dy="27.3">request / decision / correction</tspan>
+<tspan x="68" dy="27.3">Документы — закрытые ссылки</tspan>
+</text>
+<rect x="575" y="970" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="575" y="970" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="593" y="1003" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="593" dy="0">Оценка · Assessment</tspan>
+</text>
+<text x="593" y="1051" font-size="21" text-anchor="start">
+<tspan x="593" dy="0">PK assessment_id; FK run_id</tspan>
+<tspan x="593" dy="27.3">state, score?; valid_until</tspan>
+<tspan x="593" dy="27.3">identification, registry_status</tspan>
+<tspan x="593" dy="27.3">method_snapshot, explanation</tspan>
+<tspan x="593" dy="27.3">Неизменяемый результат</tspan>
+</text>
+<rect x="1100" y="970" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="1100" y="970" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="1118" y="1003" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="1118" dy="0">Основание факта · FactEvidence</tspan>
+</text>
+<text x="1118" y="1051" font-size="21" text-anchor="start">
+<tspan x="1118" dy="0">PK evidence_id</tspan>
+<tspan x="1118" dy="27.3">FK (fact_id, fact_revision)</tspan>
+<tspan x="1118" dy="27.3">FK source_result_id</tspan>
+<tspan x="1118" dy="27.3">external_ref, source_fragment</tspan>
+<tspan x="1118" dy="27.3">Несколько оснований события</tspan>
+</text>
+<rect x="575" y="1390" width="420" height="238" rx="4" fill="white" stroke="#26364a" stroke-width="2"/>
+<rect x="575" y="1390" width="420" height="49" rx="4" fill="#eaf2fc" stroke="#26364a" stroke-width="2"/>
+<text x="593" y="1423" font-size="23" text-anchor="start" font-weight="700">
+<tspan x="593" dy="0">Вклад · AssessmentEvidence</tspan>
+</text>
+<text x="593" y="1471" font-size="21" text-anchor="start">
+<tspan x="593" dy="0">PK (assessment_id, fact_id)</tspan>
+<tspan x="593" dy="27.3">FK assessment_id</tspan>
+<tspan x="593" dy="27.3">FK (fact_id, fact_revision)</tspan>
+<tspan x="593" dy="27.3">factor_code, value, contribution</tspan>
+<tspan x="593" dy="27.3">explanation; один вклад события</tspan>
+</text>
+<polyline points="470,250 575,250" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="522" y="231" font-size="20" text-anchor="middle">
+<tspan x="522" dy="0">история</tspan>
+</text>
+<text x="486" y="278" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="486" dy="0">1</tspan>
+</text>
+<text x="545" y="278" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="545" dy="0">0..N</tspan>
+</text>
+<polyline points="995,250 1100,250" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="1048" y="227" font-size="20" text-anchor="middle">
+<tspan x="1048" dy="0">субъект</tspan>
+</text>
+<text x="1020" y="278" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1020" dy="0">0..N</tspan>
+</text>
+<text x="1082" y="278" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1082" dy="0">1</tspan>
+</text>
+<polyline points="575,320 530,320 530,490 260,490 260,550" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="355" y="473" font-size="20" text-anchor="middle">
+<tspan x="355" dy="0">запускает</tspan>
+</text>
+<text x="550" y="350" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="550" dy="0">1</tspan>
+</text>
+<text x="300" y="530" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="300" dy="0">0..N</tspan>
+</text>
+<polyline points="470,660 575,660" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="522" y="637" font-size="20" text-anchor="middle">
+<tspan x="522" dy="0">собирает</tspan>
+</text>
+<text x="487" y="690" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="487" dy="0">1</tspan>
+</text>
+<text x="545" y="690" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="545" dy="0">0..N</tspan>
+</text>
+<polyline points="1310,378 1310,550" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="1400" y="475" font-size="20" text-anchor="middle">
+<tspan x="1400" dy="0">имеет факты</tspan>
+</text>
+<text x="1275" y="413" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1275" dy="0">1</tspan>
+</text>
+<text x="1270" y="525" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1270" dy="0">0..N</tspan>
+</text>
+<polyline points="1310,788 1310,970" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="1410" y="885" font-size="20" text-anchor="middle">
+<tspan x="1410" dy="0">подтверждается</tspan>
+</text>
+<text x="1277" y="824" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1277" dy="0">1</tspan>
+</text>
+<text x="1270" y="943" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1270" dy="0">1..N</tspan>
+</text>
+<polyline points="785,788 785,875 1045,875 1045,1085 1100,1085" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="925" y="855" font-size="20" text-anchor="middle">
+<tspan x="925" dy="0">основания</tspan>
+</text>
+<text x="820" y="820" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="820" dy="0">1</tspan>
+</text>
+<text x="1060" y="1120" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1060" dy="0">0..N</tspan>
+</text>
+<polyline points="470,730 520,730 520,925 650,925 650,970" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="590" y="905" font-size="20" text-anchor="middle">
+<tspan x="590" dy="0">результат</tspan>
+</text>
+<text x="493" y="764" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="493" dy="0">1</tspan>
+</text>
+<text x="690" y="952" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="690" dy="0">0..1</tspan>
+</text>
+<polyline points="575,350 505,350 505,915 260,915 260,970" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="355" y="895" font-size="20" text-anchor="middle">
+<tspan x="355" dy="0">аудит</tspan>
+</text>
+<text x="540" y="381" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="540" dy="0">1</tspan>
+</text>
+<text x="303" y="951" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="303" dy="0">0..N</tspan>
+</text>
+<polyline points="785,1208 785,1390" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="893" y="1300" font-size="20" text-anchor="middle">
+<tspan x="893" dy="0">объясняется</tspan>
+</text>
+<text x="748" y="1245" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="748" dy="0">1</tspan>
+</text>
+<text x="740" y="1362" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="740" dy="0">0..N</tspan>
+</text>
+<polyline points="1520,665 1545,665 1545,1510 995,1510" fill="none" stroke="#26364a" stroke-width="2.2" />
+<text x="1410" y="1487" font-size="20" text-anchor="middle">
+<tspan x="1410" dy="0">учитывается</tspan>
+</text>
+<text x="1532" y="634" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1532" dy="0">1</tspan>
+</text>
+<text x="1035" y="1541" font-size="20" text-anchor="middle" font-weight="700">
+<tspan x="1035" dy="0">0..N</tspan>
+</text>
+<rect x="50" y="1390" width="420" height="235" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="260.0" y="1432.74" font-size="21" text-anchor="middle">
+<tspan x="260.0" dy="0">Смена ЮЛ/ИП закрывает старую</tspan>
+<tspan x="260.0" dy="27.3">связь и создаёт новую.</tspan>
+<tspan x="260.0" dy="27.3">Указатель текущей оценки</tspan>
+<tspan x="260.0" dy="27.3">меняется атомарно вместе</tspan>
+<tspan x="260.0" dy="27.3">с проверкой версий задания.</tspan>
+<tspan x="260.0" dy="27.3">Другие поля и сущности</tspan>
+<tspan x="260.0" dy="27.3">агрегатора здесь опущены.</tspan>
+</text>
+<text x="50" y="1700" font-size="22" text-anchor="start">
+<tspan x="50" dy="0">FactEvidence хранит происхождение; AssessmentEvidence — влияние события на конкретную оценку.</tspan>
+<tspan x="50" dy="28.6">Период события сопоставляется с периодом связи; юридический факт остаётся фактом уровня ЮЛ/ИП.</tspan>
+</text>
+</g></svg>

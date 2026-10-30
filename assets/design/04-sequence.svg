@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1570" height="2120" viewBox="0 0 1570 2120" role="img" aria-labelledby="title desc">
+<title id="title">UML sequence · проверка, повтор и безопасная публикация</title><desc id="desc">Показаны проектные команды, а не действующие HTTP-методы; время идёт сверху вниз</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 1 1 L 8 5 L 1 9" fill="none" stroke="#26364a" stroke-width="2"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26364a">
+<text x="44" y="48" font-size="29" text-anchor="start" font-weight="700">
+<tspan x="44" dy="0">UML sequence · проверка, повтор и безопасная публикация</tspan>
+</text>
+<text x="44" y="84" font-size="21" text-anchor="start">
+<tspan x="44" dy="0">Показаны проектные команды, а не действующие HTTP-методы; время идёт сверху вниз</tspan>
+</text>
+<rect x="30" y="120" width="250" height="85" rx="0" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="155.0" y="155.67999999999998" font-size="22" text-anchor="middle">
+<tspan x="155.0" dy="0">Клиентское</tspan>
+<tspan x="155.0" dy="28.6">приложение</tspan>
+</text>
+<polyline points="155,205 155,2030" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<rect x="345" y="120" width="250" height="85" rx="0" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="470.0" y="155.67999999999998" font-size="22" text-anchor="middle">
+<tspan x="470.0" dy="0">API модуля</tspan>
+<tspan x="470.0" dy="28.6">в Products</tspan>
+</text>
+<polyline points="470,205 470,2030" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<rect x="660" y="120" width="250" height="85" rx="0" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="785.0" y="169.98" font-size="22" text-anchor="middle">
+<tspan x="785.0" dy="0">База данных</tspan>
+</text>
+<polyline points="785,205 785,2030" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<rect x="975" y="120" width="250" height="85" rx="0" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="1100.0" y="155.67999999999998" font-size="22" text-anchor="middle">
+<tspan x="1100.0" dy="0">Worker</tspan>
+<tspan x="1100.0" dy="28.6">проверки</tspan>
+</text>
+<polyline points="1100,205 1100,2030" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<rect x="1290" y="120" width="250" height="85" rx="0" fill="#f1f3f6" stroke="#26364a" stroke-width="2"/>
+<text x="1415.0" y="155.67999999999998" font-size="22" text-anchor="middle">
+<tspan x="1415.0" dy="0">Внешние</tspan>
+<tspan x="1415.0" dy="28.6">источники</tspan>
+</text>
+<polyline points="1415,205 1415,2030" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<polyline points="155,270 470,270" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="312.5" y="228" font-size="20" text-anchor="middle">
+<tspan x="312.5" dy="0">1. Реквизиты / перепроверка</tspan>
+<tspan x="312.5" dy="26.0">+ command_id</tspan>
+</text>
+<rect x="350" y="305" width="250" height="78" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="475.0" y="337.8" font-size="20" text-anchor="middle">
+<tspan x="475.0" dy="0">Права на точку;</tspan>
+<tspan x="475.0" dy="26.0">формат реквизитов</tspan>
+</text>
+<polyline points="470,435 785,435" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="627.5" y="393" font-size="20" text-anchor="middle">
+<tspan x="627.5" dy="0">2. В транзакции: версии,</tspan>
+<tspan x="627.5" dy="26.0">generation, задание</tspan>
+</text>
+<polyline points="785,510 470,510" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="627.5" y="494" font-size="20" text-anchor="middle">
+<tspan x="627.5" dy="0">run_id; дубль → тот же run</tspan>
+</text>
+<polyline points="470,570 155,570" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="312.5" y="554" font-size="20" text-anchor="middle">
+<tspan x="312.5" dy="0">3. Принято; статус проверки</tspan>
+</text>
+<polyline points="1100,650 785,650" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="942.5" y="634" font-size="20" text-anchor="middle">
+<tspan x="942.5" dy="0">4. Взять задание с lease</tspan>
+</text>
+<polyline points="785,715 1100,715" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="942.5" y="699" font-size="20" text-anchor="middle">
+<tspan x="942.5" dy="0">Снимок входов + lease_epoch</tspan>
+</text>
+<rect x="935" y="760" width="610" height="330" rx="0" fill="none" stroke="#26364a" stroke-width="2"/>
+<text x="950" y="789" font-size="20" text-anchor="start" font-weight="700">
+<tspan x="950" dy="0">loop [для каждого разрешённого источника]</tspan>
+</text>
+<polyline points="1100,850 1415,850" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="1257.5" y="808" font-size="20" text-anchor="middle">
+<tspan x="1257.5" dy="0">5. Запрос по точным</tspan>
+<tspan x="1257.5" dy="26.0">идентификаторам и scope</tspan>
+</text>
+<polyline points="1415,930 1100,930" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="1257.5" y="888" font-size="20" text-anchor="middle">
+<tspan x="1257.5" dy="0">Сведения / ошибка /</tspan>
+<tspan x="1257.5" dy="26.0">неоднозначность</tspan>
+</text>
+<rect x="970" y="970" width="540" height="90" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1240.0" y="995.8" font-size="20" text-anchor="middle">
+<tspan x="1240.0" dy="0">Таймаут 10 с; не более 2 попыток.</tspan>
+<tspan x="1240.0" dy="26.0">Неуспех сохраняется как недоступность,</tspan>
+<tspan x="1240.0" dy="26.0">а не как отсутствие событий.</tspan>
+</text>
+<rect x="925" y="1130" width="570" height="105" rx="4" fill="#fff5df" stroke="#26364a" stroke-width="2"/>
+<text x="1210.0" y="1162.3400000000001" font-size="21" text-anchor="middle">
+<tspan x="1210.0" dy="0">6. Сопоставить субъекта, объединить дубли;</tspan>
+<tspan x="1210.0" dy="27.3">зафиксировать источники и конфигурацию;</tspan>
+<tspan x="1210.0" dy="27.3">рассчитать допустимую оценку / причины null.</tspan>
+</text>
+<polyline points="1100,1300 785,1300" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="942.5" y="1258" font-size="20" text-anchor="middle">
+<tspan x="942.5" dy="0">7. Сохранить результат с условием:</tspan>
+<tspan x="942.5" dy="26.0">versions + generation + lease_epoch</tspan>
+</text>
+<rect x="625" y="1330" width="600" height="325" rx="0" fill="none" stroke="#26364a" stroke-width="2"/>
+<text x="640" y="1359" font-size="20" text-anchor="start" font-weight="700">
+<tspan x="640" dy="0">alt [задание ещё имеет право публиковать]</tspan>
+</text>
+<text x="925" y="1404" font-size="20" text-anchor="middle">
+<tspan x="925" dy="0">COMMIT: снимки, оценка, текущий указатель</tspan>
+</text>
+<polyline points="625,1440 1225,1440" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<text x="640" y="1468" font-size="19" text-anchor="start" font-weight="700">
+<tspan x="640" dy="0">[версии устарели, lease ещё принадлежит попытке]</tspan>
+</text>
+<text x="925" y="1510" font-size="20" text-anchor="middle">
+<tspan x="925" dy="0">История / superseded; не менять текущий указатель</tspan>
+</text>
+<polyline points="625,1540 1225,1540" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" />
+<text x="640" y="1568" font-size="19" text-anchor="start" font-weight="700">
+<tspan x="640" dy="0">[lease / lease_epoch больше не принадлежат попытке]</tspan>
+</text>
+<text x="925" y="1612" font-size="20" text-anchor="middle">
+<tspan x="925" dy="0">Отбросить ответ; не менять задание другой попытки</tspan>
+</text>
+<polyline points="155,1775 470,1775" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="312.5" y="1733" font-size="20" text-anchor="middle">
+<tspan x="312.5" dy="0">8. Открыть карточку</tspan>
+<tspan x="312.5" dy="26.0">или запросить статус</tspan>
+</text>
+<polyline points="470,1850 785,1850" fill="none" stroke="#26364a" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="627.5" y="1808" font-size="20" text-anchor="middle">
+<tspan x="627.5" dy="0">9. Прочитать результат;</tspan>
+<tspan x="627.5" dy="26.0">проверить версии и срок</tspan>
+</text>
+<polyline points="785,1925 470,1925" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="627.5" y="1883" font-size="20" text-anchor="middle">
+<tspan x="627.5" dy="0">Безопасная проекция /</tspan>
+<tspan x="627.5" dy="26.0">нет актуального результата</tspan>
+</text>
+<polyline points="470,2000 155,2000" fill="none" stroke="#26364a" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="312.5" y="1958" font-size="20" text-anchor="middle">
+<tspan x="312.5" dy="0">10. Факты, источники, даты,</tspan>
+<tspan x="312.5" dy="26.0">полнота и понятное объяснение</tspan>
+</text>
+<text x="40" y="2080" font-size="22" text-anchor="start">
+<tspan x="40" dy="0">Сплошные стрелки — запросы, пунктир — ответы. Долгая проверка не удерживает клиентский запрос.</tspan>
+</text>
+</g></svg>
